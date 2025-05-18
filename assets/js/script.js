@@ -97,12 +97,12 @@ function showSkills(skills) {
       icon: "fas fa-brain",
     },
     {
-      title: "DevOps",
+      title: "DevOps / Automation",
       skills: skills.devOps,
       icon: "fas fa-server",
     },
     {
-      title: "Software Development",
+      title: "Software Development / Databases",
       skills: skills.softwareDevelopment,
       icon: "fas fa-code",
     },
