@@ -86,7 +86,7 @@ async function fetchData(type = "skills") {
   let response;
   type === "skills"
     ? (response = await fetch("skills.json"))
-    : (response = await fetch("./projects.json"));
+    : (response = await fetch("projects.json"));
   const data = await response.json();
   return data;
 }
@@ -149,7 +149,7 @@ function showProjects(projects) {
   // Filter and get first 8 projects (excluding android)
   const filteredProjects = projects
     .filter((project) => project.category !== "android")
-    .slice(0, 8);
+    .slice(0, 9);
 
   filteredProjects.forEach((project) => {
     projectsContainer.innerHTML += `

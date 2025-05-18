@@ -777,7 +777,7 @@ header .navbar ul li a:hover {
 
 /* Hover effects */
 .work .box:hover {
-  transform: scale(5);
+  transform: scale(1.15);
   z-index: 10;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
