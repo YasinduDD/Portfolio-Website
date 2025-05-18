@@ -28,12 +28,16 @@ $(document).ready(function () {
     });
   });
 
-  // smooth scrolling
+  // smooth scrolling with offset
   $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
+    const navbarHeight = $("header").outerHeight();
+    const target = $($(this).attr("href"));
+    const targetPosition = target.offset().top - navbarHeight;
+
     $("html, body").animate(
       {
-        scrollTop: $($(this).attr("href")).offset().top,
+        scrollTop: targetPosition,
       },
       500,
       "linear"
@@ -60,16 +64,6 @@ $(document).ready(function () {
     event.preventDefault();
   });
   // <!-- emailjs to mail contact form data -->
-});
-
-document.addEventListener("visibilitychange", function () {
-  if (document.visibilityState === "visible") {
-    document.title = "Portfolio | Jigar Sable";
-    $("#favicon").attr("href", "assets/images/favicon.png");
-  } else {
-    document.title = "Come Back To Portfolio";
-    $("#favicon").attr("href", "assets/images/favhand.png");
-  }
 });
 
 // <!-- typed js effect starts -->
@@ -181,6 +175,64 @@ function showProjects(projects) {
   });
 }
 
+async function initCertifications() {
+  const response = await fetch("certifications.json");
+  const certifications = await response.json();
+
+  const certItems = document.querySelector(".cert-items");
+  certItems.innerHTML = "";
+
+  certifications.forEach((cert) => {
+    certItems.innerHTML += `
+      <div class="cert-card">
+        <img src="./assets/images/certifications/${cert.image}" alt="${cert.title}">
+        <div class="cert-overlay">
+          <h3 class="cert-title">${cert.title}</h3>
+          <p class="cert-institute">${cert.institute}</p>
+          <p class="cert-date">${cert.date}</p>
+          <a href="${cert.verifyUrl}" class="verify-btn" target="_blank">Verify</a>
+        </div>
+      </div>
+    `;
+  });
+
+  // Carousel navigation
+  const leftBtn = document.querySelector(".left-btn");
+  const rightBtn = document.querySelector(".right-btn");
+
+  leftBtn.addEventListener("click", () => {
+    document.querySelector(".cert-items").scrollBy({
+      left: -350,
+      behavior: "smooth",
+    });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    document.querySelector(".cert-items").scrollBy({
+      left: 350,
+      behavior: "smooth",
+    });
+  });
+
+  // Enable horizontal scroll with touchpad gestures
+  const certScrollContainer = document.querySelector(".cert-items");
+
+  certScrollContainer.addEventListener("wheel", (e) => {
+    // Only respond to horizontal scroll gestures
+    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+      e.preventDefault();
+      const scrollAmount = e.deltaX > 0 ? 350 : -350;
+      certScrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  });
+}
+
+// Call this function when the page loads
+document.addEventListener("DOMContentLoaded", initCertifications);
+
 fetchData().then((data) => {
   showSkills(data);
 });
@@ -260,12 +312,17 @@ srtop.reveal(".skills .container .bar", { delay: 400 });
 srtop.reveal(".education .box", { interval: 200 });
 
 /* SCROLL PROJECTS */
-srtop.reveal(".work .box", { interval: 200 });
+srtop.reveal(".work .box-container", { interval: 200 });
 
 /* SCROLL EXPERIENCE */
 srtop.reveal(".experience .timeline", { delay: 400 });
 srtop.reveal(".experience .timeline .container", { interval: 400 });
 
+/* SCROLL CERTIFICATIONS */
+//srtop.reveal(".certifications .heading", { delay: 200 });
+srtop.reveal(".certifications .cert-container", { interval: 200 });
+
 /* SCROLL CONTACT */
+//srtop.reveal(".contact .heading", { delay: 200 });
 srtop.reveal(".contact .container", { delay: 400 });
 srtop.reveal(".contact .container .form-group", { delay: 400 });
