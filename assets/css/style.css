@@ -128,6 +128,9 @@ header .navbar ul li a:hover {
   cursor: pointer;
   color: rgb(24, 2, 63);
   display: none;
+  position: absolute;
+  right: 2rem; /* Move to right side */
+  top: 1.5rem;
 }
 @media (max-width: 768px) {
   #menu {
@@ -523,20 +526,85 @@ header .navbar ul li a:hover {
   font-family: "Poppins";
 }
 
-/* Responsive styles */
+/* Skills Section - Mobile Optimization */
 @media screen and (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .skills {
+    min-height: auto;
+    padding: 2rem 0; /* Added top/bottom padding */
   }
-}
 
-@media screen and (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .skills .container {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: transparent; /* Remove container background */
+    border-radius: 0;
+  }
+
+  .skill-category {
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border: none;
   }
 
   .category-title {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+    gap: 1rem;
+    padding: 0 0.5rem; /* Small side padding */
+  }
+
+  .skills .container .bar {
+    padding: 8px;
+    margin-bottom: 0;
+    background: rgba(0, 0, 22, 0.7);
+  }
+
+  .skills .container .bar .info img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skills .container .bar .info span {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Phones (<= 480px) */
+@media screen and (max-width: 480px) {
+  .skills {
+    padding: 1.5rem 0;
+  }
+
+  .skill-category {
+    padding: 0.8rem;
+  }
+
+  .category-title {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* Keep 3 columns */
+    gap: 0.8rem;
+  }
+
+  .skills .container .bar {
+    padding: 6px;
+  }
+
+  .skills .container .bar .info img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skills .container .bar .info span {
+    font-size: 1.1rem;
   }
 }
 /* skills media queries ends*/
@@ -564,7 +632,7 @@ header .navbar ul li a:hover {
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
-  transition: 0.3s;
+  transition: all 0.5s ease;
   background: rgb(252, 252, 252);
 }
 .education .box-container .box:hover {
@@ -787,6 +855,21 @@ header .navbar ul li a:hover {
   .work .box-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
+  .work .box:hover .content {
+    opacity: 1;
+    transform: scale(1.1);
+    pointer-events: auto;
+    border-radius: 0.5rem;
+  }
+  .work .box:hover {
+    transform: scale(1.1);
+    z-index: 100;
+  }
+
+  .work .box:hover img {
+    filter: blur(5px) brightness(0.8);
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -867,7 +950,6 @@ header .navbar ul li a:hover {
   font-family: "Font Awesome 5 Free";
 }
 
-/* Enlarge the content box */
 .experience .content {
   padding: 8rem;
   border-radius: 10px;
@@ -878,6 +960,7 @@ header .navbar ul li a:hover {
 
 .experience-content {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
   margin-left: 0; /* Remove any default margin */
@@ -886,6 +969,7 @@ header .navbar ul li a:hover {
 
 .experience-details {
   flex: 1;
+  width: 100%;
 }
 
 .description {
@@ -897,7 +981,7 @@ header .navbar ul li a:hover {
   width: 150px;
   height: 60px;
   object-fit: cover;
-  margin-top: 0px; /* Adjust as needed */
+  margin-top: -4rem; /* Adjust as needed */
   margin-left: -3rem; /* Remove any left margin */
   margin-right: 0.25rem; /* Add small spacing between logo and text */
 }
@@ -916,13 +1000,10 @@ header .navbar ul li a:hover {
   font-size: 2rem;
 }
 
-.desc p {
-  font-size: 50 rem;
-}
-
 .desc h3,
 .desc p {
   margin: 0.3rem 0;
+  font-size: 1.2rem;
 }
 
 .description ul {
@@ -942,6 +1023,118 @@ header .navbar ul li a:hover {
   right: 30px;
 }
 
+/* Responsive adjustments */
+
+/* Experience Section - Mobile & Tablet Optimization */
+@media (max-width: 600px) {
+  .experience {
+    padding: 2rem 5%;
+    min-height: auto;
+  }
+
+  .experience .timeline {
+    margin-top: 3rem;
+  }
+
+  .experience .timeline::after,
+  .experience .container::before,
+  .experience .container::after {
+    display: none;
+  }
+
+  .experience .container {
+    padding: 0 0 2.5rem 0; /* Removed left/right padding, kept bottom */
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* Prevent overflow */
+  }
+
+  .experience .content {
+    padding: 1.5rem;
+    margin: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff9f55;
+    background: white;
+    width: 100%; /* Full width content */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .experience-content {
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0;
+    align-items: center;
+  }
+
+  .experience-details {
+    width: 100%;
+  }
+
+  .timeline-image-left {
+    width: 120px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto 1rem auto; /* Center horizontally with auto margins */
+    order: -1; /* Move to top of flex container */
+    display: block; /* Ensure proper centering */
+  }
+
+  .timeline-image-right {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    margin: 1rem auto 0 auto; /* Center horizontally with auto margins */
+    order: 999; /* Move to bottom of flex container */
+    display: block !important; /* Force show even if hidden elsewhere */
+    position: relative !important; /* Override any absolute positioning */
+    top: auto !important;
+    right: auto !important;
+  }
+
+  .tag h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #02094b;
+    margin-right: 0;
+    margin-top: -2rem;
+    text-align: center;
+  }
+
+  .desc h2 {
+    text-align: center;
+  }
+
+  .desc h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.3rem 0;
+    text-align: center;
+  }
+
+  .desc p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0.3rem 0;
+    text-align: center;
+  }
+
+  .description {
+    margin: 1rem 0 0 0;
+  }
+
+  .description ul {
+    font-size: 1.1rem;
+    margin: 0 0 0 1rem; /* Only left margin */
+    padding: 0 0 0 0.5rem; /* Only left padding */
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .description li {
+    margin-bottom: 0.5rem;
+    padding-right: 0;
+  }
+}
+
 /* experience media queries ends */
 /* experience section ends */
 
@@ -949,11 +1142,12 @@ header .navbar ul li a:hover {
 .certifications {
   background: linear-gradient(to bottom, #00264d, #00498d);
   min-height: 60vh;
-  padding: 5rem 9%;
+  padding: 5rem 2%;
 }
 
 .certifications .heading {
   color: #ffffff;
+  text-align: center;
 }
 
 .cert-container {
@@ -975,8 +1169,8 @@ header .navbar ul li a:hover {
   color: white;
   border: none;
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   font-size: 1.8rem;
   cursor: pointer;
   z-index: 10;
@@ -1092,38 +1286,70 @@ header .navbar ul li a:hover {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .certifications {
+    padding: 3rem 5%;
+    min-height: auto;
+  }
+
+  .cert-items {
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
   .cert-card {
-    min-width: 300px;
-    height: 400px;
+    min-width: 70%;
   }
 
   .carousel-btn {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 1.5rem;
+    display: none;
   }
 
-  .left-btn {
-    left: -1rem;
+  .cert-title {
+    font-size: 1.6rem; /* Even smaller on very small screens */
   }
 
-  .right-btn {
-    right: -1rem;
+  .cert-institute {
+    font-size: 1.2rem;
+  }
+
+  .cert-date {
+    font-size: 1rem;
+  }
+
+  .verify-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
   .cert-card {
-    min-width: 280px;
-    height: 380px;
+    min-width: 330px; /* Nearly full width */
+    height: 255px;
+  }
+
+  .cert-overlay {
+    padding: 1rem; /* Minimal padding */
   }
 
   .cert-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
   }
 
   .cert-institute {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .cert-date {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .verify-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
