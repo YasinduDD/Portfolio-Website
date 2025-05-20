@@ -140,7 +140,7 @@ header .navbar ul li a:hover {
     position: fixed;
     top: 6.5rem;
     right: -120%;
-    width: 75%;
+    width: 60%;
     height: 100%;
     text-align: left;
     align-items: flex-start;
@@ -1297,7 +1297,8 @@ header .navbar ul li a:hover {
   }
 
   .cert-card {
-    min-width: 70%;
+    min-width: 280px;
+    height: 210px;
   }
 
   .carousel-btn {
@@ -1324,8 +1325,8 @@ header .navbar ul li a:hover {
 
 @media (max-width: 480px) {
   .cert-card {
-    min-width: 330px; /* Nearly full width */
-    height: 255px;
+    min-width: 250px; /* Nearly full width */
+    height: 190px;
   }
 
   .cert-overlay {
