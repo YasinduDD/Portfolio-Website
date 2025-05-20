@@ -68,7 +68,7 @@ $(document).ready(function () {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-  strings: ["Machine Learning", "DevOps", "software development"],
+  strings: ["Machine Learning", "DevOps", "Software Development"],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
