@@ -140,21 +140,17 @@ function showProjects(projects) {
   let projectsContainer = document.querySelector("#work .box-container");
   projectsContainer.innerHTML = "";
 
-  // Filter and get first 8 projects (excluding android)
-  const filteredProjects = projects
-    .filter((project) => project.category !== "android")
-    .slice(0, 9);
-
-  filteredProjects.forEach((project) => {
+  projects.forEach((project) => {
     projectsContainer.innerHTML += `
       <div class="box tilt">
-        <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="${project.name}" />
+        <img draggable="false" src="/assets/images/projects/${project.image}.jpg" alt="${project.name}" />
         <div class="project-footer">
           <h3>${project.name}</h3>
         </div>
         <div class="content">
           <div class="desc">
-            <p>${project.desc}</p>
+          <p>${project.desc}<br></p>
+          <ul><b>Tech Stack: ${project.stack}</b></ul>
             <div class="btns">
               <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
               <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
@@ -166,13 +162,13 @@ function showProjects(projects) {
   });
 
   // Initialize tilt.js with subtle effect
-  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  /*VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 5,
     speed: 400,
     glare: true,
     "max-glare": 0.1,
     scale: 1.02,
-  });
+  });*/
 }
 
 async function initCertifications() {

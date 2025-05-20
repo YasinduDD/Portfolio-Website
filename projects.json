@@ -1,342 +1,101 @@
 [
   {
-    "name": "NotyStack Android",
-    "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
-    "image": "notystackandroid",
-    "category": "android",
+    "name": "RoadSense",
+    "desc": "An AI-powered Android application that detects road signs in real time using an optimized YOLOv11n model with GPU acceleration, achieving 30ms FPS. The system provides voice-assisted alerts via Google Text-to-Speech, including warnings for overspeeding. A built-in driver behavior analysis module scores performance based on violations such as exceeding speed limits. Designed to improve road safety and assist in driver monitoring for logistics and transport sectors",
+    "stack": "YOLOv11n, PyTorch, TFLite, Kotlin, Google TTS, GPS, Room DB",
+    "image": "road sense",
+    "category": "Machine Learning",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/notystack-android"
+      "view": "https://drive.google.com/drive/folders/1wzdQgvtGrgTFypchJOT6T5PNVcvmT5yk?usp=sharing",
+      "code": "https://github.com/YasinduDD/RoadSense"
     }
   },
   {
-    "name": "SPPU Engg Prep",
-    "desc": "All in one SPPU Engineering resources. Built using Java, XML and Firebase.",
-    "image": "sppuprepandroid",
-    "category": "android",
+    "name": "OccluWatch",
+    "desc": "A multi-camera vehicle tracking system designed to detect road violations with effective occlusion handling using YOLO for detection and ResNet-based ReID for identity preservation. Utilizes Graph Neural Networks and temporal analysis to optimize cross-camera vehicle tracking. Integrated OCR for automated license plate recognition and backend services to issue violation tickets via SMS and email notifications.",
+    "stack": "YOLO, ResNet, Vehicle ReID, GNN, OCR, Python, Flask, Spatial temporal analysis",
+    "image": "occluwatch",
+    "category": "Machine Learning",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/sppu-prep-android"
+      "view": "https://drive.google.com/drive/folders/1jpdhqB-M_xTqcACjUwfsv9FSf1IjNA-H?usp=sharing",
+      "code": ""
     }
   },
   {
-    "name": "NewsBox Android",
-    "desc": "Native android app built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
-    "image": "newsboxandroid",
-    "category": "android",
+    "name": "VetCare",
+    "desc": "A distributed pet clinic management system built with Spring Boot microservices architecture. Features core services for managing customers, veterinarians, and pet visits with centralized configuration and service discovery. Deployed on Kubernetes with an AngularJS frontend and RESTful APIs routed via an API Gateway.",
+    "stack": "Spring Boot, Spring Cloud, Eureka, AngularJS, MySQL, Kubernetes",
+    "image": "vetcare",
+    "category": "DevOps",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/newsbox-android"
+      "view": "https://drive.google.com/drive/folders/1UxtKk52LDttIBSNKkjpaTqhMZzUsHFSr?usp=sharing",
+      "code": ""
     }
   },
   {
-    "name": "Weatherly Android",
-    "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
-    "image": "weatherlyandroid",
-    "category": "android",
+    "name": "Intelli",
+    "desc": "An intelligent media player with gesture and gaze control. Combines computer vision and parallel processing to enable gesture-based playback and volume control using hand movements, along with eye-tracking for automatic pause and play functionality. Supports various media formats and allows simultaneous processing of hand and eye control modes, with seamless toggling between them.",
+    "stack": "OpenCV, Media Pipe, Python, Multiprocessing, Tkinter",
+    "image": "intelli",
+    "category": "Machine Learning",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/weatherly-android"
+      "view": "https://drive.google.com/drive/folders/1-R4HtBAUD2L-S6PHUMPoDx1C3rXHvGvS?usp=sharing",
+      "code": "https://github.com/YasinduDD/Intelli"
     }
   },
   {
-    "name": "Instagram MERN",
-    "desc": "Full-Stack Instagram clone built using MERN stack and realtime chat with the help of socket.iO",
-    "image": "instagrammern",
-    "category": "mern",
+    "name": " InPath",
+    "desc": "An exam process automation platform with predictive analytics. A web and mobile-based learning management system designed to streamline academic workflows. Features a machine learning model that predicts students’ future academic pathways based on performance data. The platform includes integrated attendance tracking, intelligent exam seating arrangements, and an automated CV generator with customizable templates.",
+    "stack": "Python, Flask, Scikit-learn, HTML/CSS, JavaScript, Flutter",
+    "image": "inpath",
+    "category": "Machine Learning",
     "links": {
-      "view": "https://instagramernstack.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/instagram-mern"
+      "view": "https://www.linkedin.com/posts/yasindu-dissanayake-foe_webapplication-exammanagement-activity-7163549272569753602-Urzi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdpl0UBIjTYqK1Oyr3VGJBaRiuzLfy-4YE",
+      "code": "https://github.com/YasinduDD/inPATH"
     }
   },
   {
-    "name": "Flipkart MERN",
-    "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
-    "image": "flipkartmern",
-    "category": "mern",
+    "name": " Pixelizer",
+    "desc": "A cloud-based photo editing solution with microservice architecture. A scalable photo editing application deployed on AWS, allowing users to perform various edits such as applying templates, decolorizing images, and more. Built using a microservices approach, the system leverages AWS services including ECR, ECS, S3 buckets, and load balancers for efficient deployment, storage, and load management.",
+    "stack": "Python, AWS (ECR, ECS, S3), Docker",
+    "image": "pixelizer",
+    "category": "DevOps",
     "links": {
-      "view": "https://flipkartwebs.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/flipkart-mern"
+      "view": "https://drive.google.com/file/d/1Ch8S4xULehU-b2gyeW7ZFxGiZLehR6Wy/view?usp=sharing",
+      "code": ""
     }
   },
   {
-    "name": "ResumeGen",
-    "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
-    "image": "resumegen",
-    "category": "mern",
+    "name": "Maze Solver",
+    "desc": "An interactive maze-solving tool supporting both randomly generated and image-based mazes. Implements BFS, Dijkstra, and A* algorithms with real-time path visualization. Allows users to select start/end points and see animated solutions. Image-based solving uses skeletonization for accurate path extraction.",
+    "stack": "Python, Pygame, NumPy, Skeletonization, BFS, Dijkstra, A*",
+    "image": "Maze Solver",
+    "category": "Software Development",
     "links": {
-      "view": "https://resumegenx.netlify.app/",
-      "code": "https://github.com/jigar-sable/resumegen"
+      "view": "https://drive.google.com/file/d/1X18nSkWgVJV0mDEtJrSU099MDoaukUPK/view?usp=sharing",
+      "code": ""
     }
   },
   {
-    "name": "React-Projects",
-    "desc": "Full-Stack project dashboard which is collection of projects built on the React library.",
-    "image": "reactprojects",
-    "category": "mern",
+    "name": "ReelMatch",
+    "desc": "A personalized movie recommendation system using NLP. Utilizes machine learning techniques such as TF-IDF Vectorization and cosine similarity to generate tailored movie recommendations. Users can interact through a simple and intuitive web interface built with Streamlit. By entering a movie title, they receive five personalized suggestions based on content similarity.",
+    "stack": "Machine Learning, Streamlit, NLP (TF-IDF, Cosine Similarity), Python",
+    "image": "ReelMatch",
+    "category": "Machine Learning",
     "links": {
-      "view": "https://reactjsprojects.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/React-Projects"
+      "view": "",
+      "code": ""
     }
   },
   {
-    "name": "Flipkart PHP",
-    "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
-    "image": "flipkartphp",
-    "category": "lamp",
+    "name": "BookTrack",
+    "desc": "A console-based library management system showcasing OOP principles. Developed in C++, this application demonstrates a strong grasp of object-oriented programming concepts such as classes, inheritance, and encapsulation. It allows basic library operations like managing books, members, and transactions through a structured, console-based interface.",
+    "stack": "C++, Object-Oriented Programming (OOP)",
+    "image": "Library",
+    "category": "Software Development",
     "links": {
-      "view": "https://github.com/jigar-sable/Flipkart-Clone-PHP",
-      "code": "https://github.com/jigar-sable/Flipkart-Clone-PHP"
-    }
-  },
-  {
-    "name": "JavaScript Projects Website",
-    "desc": "This website is specially build to showcase all major javaScript projects. All my javaScript based projects are in it.",
-    "image": "jspro",
-    "category": "basicweb",
-    "links": {
-      "view": "https://jigar-sable.github.io/JavaScript-Projects",
-      "code": "https://github.com/jigar-sable/JavaScript-Projects"
-    }
-  },
-  {
-    "name": "Web UI Clones",
-    "desc": "Flipkart, YouTube, Instagram, Sololearn web UI clones using tailwindCSS.",
-    "image": "webuiclones",
-    "category": "mern",
-    "links": {
-      "view": "https://github.com/jigar-sable/web-ui-clones",
-      "code": "https://github.com/jigar-sable/web-ui-clones"
-    }
-  },
-  {
-    "name": "Crypto Tracker",
-    "desc": "Crypto Tracker built using ReactJS and Chakra UI. Supports dark mode. API used coingecko.",
-    "image": "cryptotracker",
-    "category": "mern",
-    "links": {
-      "view": "https://crypto-tracker-react-project.netlify.app/",
-      "code": "https://github.com/jigar-sable/React-Projects/tree/main/crypto-tracker"
-    }
-  },
-  {
-    "name": "Hulu Website",
-    "desc": "Hulu website built using NextJS and tailwindCSS. API used TMDB, deployed on vercel.",
-    "image": "hulu",
-    "category": "mern",
-    "links": {
-      "view": "https://hulu-clone-jigar-sable.vercel.app/",
-      "code": "https://github.com/jigar-sable/React-Projects/tree/main/hulu-clone"
-    }
-  },
-  {
-    "name": "Portfolio Website",
-    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "portfolio1",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "https://github.com/jigar-sable/Portfolio-Website"
-    }
-  },
-  {
-    "name": "Composey Website",
-    "desc": "Simple landing page website built using HTML, CSS, JavaScript and some JavaScript Libraries.",
-    "image": "composey",
-    "category": "basicweb",
-    "links": {
-      "view": "https://composey.netlify.app/",
-      "code": "https://github.com/jigar-sable/LGMVIP-WebDev"
-    }
-  },
-  {
-    "name": "Webview App",
-    "desc": "It's an android app which uses web view component for displaying content. This app provides many different features.",
-    "image": "webviewapp",
-    "category": "android",
-    "links": {
-      "view": "https://github.com/jigar-sable/Android-Webview#webapp--android-webview-app",
-      "code": "https://github.com/jigar-sable/Android-Webview"
-    }
-  },
-  {
-    "name": "PHP Banking Website",
-    "desc": "Basic Banking System based on PHP and MySQL database. Made with HTML, CSS, JavaScript and backend with PHP.",
-    "image": "tsfbank",
-    "category": "lamp",
-    "links": {
-      "view": "https://tsfbank.rf.gd",
-      "code": "https://github.com/jigar-sable/TSF-Bank"
-    }
-  },
-  {
-    "name": "Bootstrap Portfolio",
-    "desc": "Portfolio built using HTML, CSS, Bootstrap, SASS and JavaScript. Customized Bootstrap using SCSS.",
-    "image": "bootstrapportfolio",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Bootstrap Template",
-    "desc": "Basic website template built using HTML and Bootstrap.",
-    "image": "bootstraptemplate",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Foodicious",
-    "desc": "Basic food website landing page built using HTML, CSS and JavaScript.",
-    "image": "foodicious",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Food Website",
-    "desc": "Basic food website landing page built using HTML, CSS, SASS, Bootstrap and jQuery.",
-    "image": "foodwebsite",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "WebChat Website",
-    "desc": "It's a web based chat app made using popular javaScript library Socket IO. Allows multiple users to connect.",
-    "image": "webchat",
-    "category": "mern",
-    "links": {
-      "view": "https://github.com/jigar-sable/WebChat#webchat",
-      "code": "https://github.com/jigar-sable/WebChat"
-    }
-  },
-  {
-    "name": "Basic Banking App",
-    "desc": "It's an android app which uses SQLite to store user accounts data. It provides feature to simply transact amount.",
-    "image": "basicbank",
-    "category": "android",
-    "links": {
-      "view": "https://github.com/jigar-sable/Basic_Banking_App#basic-banking-app",
-      "code": "https://github.com/jigar-sable/Basic_Banking_App"
-    }
-  },
-  {
-    "name": "JavaScript Issue Tracker",
-    "desc": "It provides the feature to Assign Issue With The Auto Generated Id By Using ChanceJS. Uses Local Storage.",
-    "image": "issuetrack",
-    "category": "basicweb",
-    "links": {
-      "view": "https://jigar-sable.github.io/JavaScript-Projects/projects/issuetracker",
-      "code": "https://github.com/jigar-sable/JavaScript-Projects/tree/main/projects/issuetracker"
-    }
-  },
-  {
-    "name": "PHP PBL Portal",
-    "desc": "A simple portal in which students can submit their PBL projects and faculties can view by access admin panel.",
-    "image": "phppblform",
-    "category": "lamp",
-    "links": {
-      "view": "https://github.com/jigar-sable/PHP-Projects/tree/main/pblform#pbl-portal",
-      "code": "https://github.com/jigar-sable/PHP-Projects/tree/main/pblform"
-    }
-  },
-  {
-    "name": "Link List",
-    "desc": "All major profile links in a single website. It's just like clone of link tree. Personalized and Responsive.",
-    "image": "linklist",
-    "category": "basicweb",
-    "links": {
-      "view": "https://jigar-sable.github.io/LinkList",
-      "code": "https://github.com/jigar-sable/LinkList"
-    }
-  },
-  {
-    "name": "Job Finder Dummy",
-    "desc": "It Fetch JSON Data And Allow Feature To Search Within The Content Displayed. Will be Developed By Using Live APIs.",
-    "image": "saas",
-    "category": "basicweb",
-    "links": {
-      "view": "https://jigar-sable.github.io/JavaScript-Projects/api-projects/saas-jobs",
-      "code": "https://github.com/jigar-sable/JavaScript-Projects/tree/main/api-projects/saas-jobs"
-    }
-  },
-  {
-    "name": "Old Websites",
-    "desc": "Bestwebs & ColorCoder. Two Years old websites memories. Simple with basic features.",
-    "image": "oldsites",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Resistor Color Codes",
-    "desc": "Simply provides the color codes of resistors. Calculation information and about resistors.",
-    "image": "resistercolor",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "KIA Info Website",
-    "desc": "Basic KIA webpage displays the info about seltos product range. Specs and Image Gallery.",
-    "image": "kiaweb",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Burger Shop Dummy",
-    "desc": "Basic burger shop webpage allow users to check menu and price. Dummy Order Form.",
-    "image": "burgerweb",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Indian Temples",
-    "desc": "It shows temples of different sectors of India. as user clicks it will redirect to wiki of that temple for info.",
-    "image": "templeweb",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Indian Temples",
-    "desc": "It shows temples of different sectors of India. as user clicks it will redirect to wiki of that temple for info.",
-    "image": "templeweb",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
-    }
-  },
-  {
-    "name": "Indian Temples",
-    "desc": "It shows temples of different sectors of India. as user clicks it will redirect to wiki of that temple for info.",
-    "image": "templeweb",
-    "category": "basicweb",
-    "links": {
-      "view": "#",
-      "code": "#"
+      "view": "",
+      "code": ""
     }
   }
 ]

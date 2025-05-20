@@ -1,37 +1,51 @@
 [
   {
-    "title": "Advanced Learning Algorithms",
-    "institute": "DeepLearning.AI & Stanford University",
-    "date": "Jan 2024",
-    "verifyUrl": "https://www.coursera.org/verify/XYZ123",
+    "title": "AWS Cloud Technical Essentials",
+    "institute": "Amazon Web Services",
+    "date": "June 2024",
+    "verifyUrl": "https://coursera.org/verify/UH6CPDBE4WFP",
     "image": "AWS Cloud Technical Essentials.jpg"
   },
   {
-    "title": "Machine Learning Specialization",
-    "institute": "DeepLearning.AI",
-    "date": "Nov 2023",
-    "verifyUrl": "https://www.coursera.org/verify/ABC456",
-    "image": "AWS Cloud Technical Essentials.jpg"
+    "title": "Kubernetes for the Beginners",
+    "institute": "KodeKloud",
+    "date": "July 2024",
+    "verifyUrl": "https://coursera.org/verify/G8V6J2673J7Q",
+    "image": "Kubernetes for the Beginners Certificate.jpg"
   },
   {
-    "title": "Advanced Learning Algorithms",
-    "institute": "DeepLearning.AI & Stanford University",
-    "date": "Jan 2024",
-    "verifyUrl": "https://www.coursera.org/verify/XYZ123",
-    "image": "AWS Cloud Technical Essentials.jpg"
+    "title": "Fundamentals of Red Hat Enterprise Linux",
+    "institute": "Red Hat",
+    "date": "June 2024",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/certificate/9SSQHBPYP62L",
+    "image": "Fundamentals of Red Hat Enterprise Linux Certificate.jpg"
   },
   {
-    "title": "Advanced Learning Algorithms",
-    "institute": "DeepLearning.AI & Stanford University",
-    "date": "Jan 2024",
-    "verifyUrl": "https://www.coursera.org/verify/XYZ123",
-    "image": "AWS Cloud Technical Essentials.jpg"
+    "title": "Introduction to Containers with Docker, Kubernetes & OpenShift",
+    "institute": "IBM",
+    "date": "September 2024",
+    "verifyUrl": "https://coursera.org/verify/J5NL5TDVTEME",
+    "image": "IBM.jpg"
   },
   {
-    "title": "Advanced Learning Algorithms",
-    "institute": "DeepLearning.AI & Stanford University",
-    "date": "Jan 2024",
-    "verifyUrl": "https://www.coursera.org/verify/XYZ123",
-    "image": "AWS Cloud Technical Essentials.jpg"
+    "title": "SUSE NeuVector Operations",
+    "institute": "SUSE",
+    "date": "August 2024",
+    "verifyUrl": "",
+    "image": "NeuVector.jpg"
+  },
+  {
+    "title": "Fundamentals of Red Hat Enterprise Linux 9",
+    "institute": "Red Hat",
+    "date": "July 2024",
+    "verifyUrl": "https://coursera.org/verify/6ER4R72Q9RU9",
+    "image": "Fundamentals of Red Hat Enterprise Linux 9 Certificate.jpg"
+  },
+  {
+    "title": "Intro to Machine Learning",
+    "institute": "Kaggle",
+    "date": "June 2024",
+    "verifyUrl": "https://www.kaggle.com/learn/certification/yasindudd/intro-to-machine-learning",
+    "image": "Intro to Machine Learning.png"
   }
 ]
