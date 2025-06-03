@@ -1217,8 +1217,10 @@ header .navbar ul li a:hover {
 .cert-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: all 0.3s ease;
+  object-position: center;
+  background-color: #fff; /* Optional: if image doesn’t fill the card */
 }
 
 .cert-overlay {
