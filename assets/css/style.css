@@ -759,7 +759,7 @@ header .navbar ul li a:hover {
   left: 0;
   width: 100%;
   padding: 1.5rem;
-  background: linear-gradient(to top, rgba(151, 93, 6, 0.8));
+  background: rgba(151, 93, 6, 0.8);
   color: white;
   text-align: center;
   z-index: 2;
