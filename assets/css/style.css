@@ -195,6 +195,7 @@ header .navbar ul li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 .home::before {
   content: "";
@@ -203,15 +204,15 @@ header .navbar ul li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 .home .content {
   flex: 1 1 40rem;
   padding-top: 1rem;
-  z-index: 1;
 }
 .home .image {
   flex: 1 1 40rem;
-  z-index: 1;
+  margin-top: 6rem;
 }
 .home .image img {
   width: 70%;
@@ -1204,8 +1205,8 @@ header .navbar ul li a:hover {
 }
 
 .cert-card {
-  min-width: 330px;
-  height: 255px;
+  /*width: 330px;
+  height: 255px;*/
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -1327,7 +1328,7 @@ header .navbar ul li a:hover {
 
 @media (max-width: 480px) {
   .cert-card {
-    min-width: 250px; /* Nearly full width */
+    min-width: 125px; /* Nearly full width */
     height: 190px;
   }
 
