@@ -1,5 +1,16 @@
 [
   {
+    "name": "OccluWatch",
+    "desc": "A multi-camera vehicle tracking system designed to detect road violations with effective occlusion handling using YOLO for detection and ResNet-based ReID for identity preservation. Utilizes Graph Neural Networks and temporal analysis to optimize cross-camera vehicle tracking. Integrated OCR for automated license plate recognition and backend services to issue violation tickets via SMS and email notifications.",
+    "stack": "YOLO, ResNet, Vehicle ReID, GNN, OCR, Python, Flask, Spatial temporal analysis",
+    "image": "occluwatch",
+    "category": "Machine Learning",
+    "links": {
+      "view": "https://drive.google.com/drive/folders/1jpdhqB-M_xTqcACjUwfsv9FSf1IjNA-H?usp=sharing",
+      "code": "https://github.com/YasinduDD/Occluwatch"
+    }
+  },
+  {
     "name": "RoadSense",
     "desc": "An AI-powered Android application that detects road signs in real time using an optimized YOLOv11n model with GPU acceleration, achieving 30ms FPS. The system provides voice-assisted alerts via Google Text-to-Speech, including warnings for overspeeding. A built-in driver behavior analysis module scores performance based on violations such as exceeding speed limits. Designed to improve road safety and assist in driver monitoring for logistics and transport sectors",
     "stack": "YOLOv11n, PyTorch, TFLite, Kotlin, Google TTS, GPS, Room DB",
@@ -11,17 +22,6 @@
     }
   },
   {
-    "name": "OccluWatch",
-    "desc": "A multi-camera vehicle tracking system designed to detect road violations with effective occlusion handling using YOLO for detection and ResNet-based ReID for identity preservation. Utilizes Graph Neural Networks and temporal analysis to optimize cross-camera vehicle tracking. Integrated OCR for automated license plate recognition and backend services to issue violation tickets via SMS and email notifications.",
-    "stack": "YOLO, ResNet, Vehicle ReID, GNN, OCR, Python, Flask, Spatial temporal analysis",
-    "image": "occluwatch",
-    "category": "Machine Learning",
-    "links": {
-      "view": "https://drive.google.com/drive/folders/1jpdhqB-M_xTqcACjUwfsv9FSf1IjNA-H?usp=sharing",
-      "code": ""
-    }
-  },
-  {
     "name": "VetCare",
     "desc": "A distributed pet clinic management system built with Spring Boot microservices architecture. Features core services for managing customers, veterinarians, and pet visits with centralized configuration and service discovery. Deployed on Kubernetes with an AngularJS frontend and RESTful APIs routed via an API Gateway.",
     "stack": "Spring Boot, Spring Cloud, Eureka, AngularJS, MySQL, Kubernetes",
@@ -29,7 +29,7 @@
     "category": "DevOps",
     "links": {
       "view": "https://drive.google.com/drive/folders/1UxtKk52LDttIBSNKkjpaTqhMZzUsHFSr?usp=sharing",
-      "code": ""
+      "code": "https://github.com/YasinduDD/VetCare"
     }
   },
   {
